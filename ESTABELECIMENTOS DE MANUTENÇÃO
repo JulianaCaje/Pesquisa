@@ -1,0 +1,8 @@
+SELECT * FROM `basedosdados.br_me_cnpj.estabelecimentos` 
+
+WHERE 
+      cnae_fiscal_principal LIKE '3312103' OR
+      cnae_fiscal_secundaria LIKE '3312103' 
+ 
+SELECT cnpj_basico, razao_social, porte, data FROM `basedosdados.br_me_cnpj.empresas` 
+WHERE data between '2022-01-01' and '2022-12-01'  
