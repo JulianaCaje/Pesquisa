@@ -1,0 +1,9 @@
+Consulta 1
+SELECT * FROM `basedosdados.br_ms_cnes.profissional` 
+where cbo_2002 like '2143%' and ano = 2019
+Consulta 2
+SELECT * FROM `basedosdados.br_ms_cnes.profissional` 
+where cbo_2002 like '2143%' and ano = 2020
+Consulta 3
+SELECT * FROM `basedosdados.br_ms_cnes.profissional` 
+where cbo_2002 like '2143%' and ano = 2021
