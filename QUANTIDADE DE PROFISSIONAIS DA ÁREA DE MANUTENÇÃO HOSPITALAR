@@ -1,0 +1,9 @@
+Consulta 1 Manutenção
+SELECT *  FROM `basedosdados.br_me_caged.microdados_movimentacao` 
+where cnae_2_subclasse LIKE '3312103'
+Consulta 2 Vendas
+SELECT *  FROM `basedosdados.br_me_caged.microdados_movimentacao` 
+where cnae_2_subclasse LIKE '4664800'
+Consulta 3 Locação
+SELECT *  FROM `basedosdados.br_me_caged.microdados_movimentacao` 
+where  cnae_2_subclasse LIKE '7739002'
