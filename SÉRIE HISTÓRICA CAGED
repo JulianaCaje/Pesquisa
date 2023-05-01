@@ -1,0 +1,4 @@
+SELECT * FROM `basedosdados.br_me_caged.microdados_antigos` 
+
+
+WHERE cnae_2_subclasse like'3312103' or cnae_2_subclasse like'4664800' or cnae_2_subclasse like '7739002' 
