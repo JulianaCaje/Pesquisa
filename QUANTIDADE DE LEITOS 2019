@@ -1,0 +1,21 @@
+SELECT 
+ SUM
+      (IFNULL(quantidade_leito_conjunto_neonatal,0)
+      + IFNULL(quantidade_leito_pre_parto,0) 
+      + IFNULL(quantidade_leito_recem_nascido_normal,0) 
+      + IFNULL(quantidade_leito_recem_nascido_patologico,0) 
+      + IFNULL(quantidade_leito_recuperacao_centro_cirurgico,0) 
+      + IFNULL(quantidade_leito_repouso_feminino_amb,0) 
+      + IFNULL(quantidade_leito_repouso_feminino_urgencia,0)
+      + IFNULL(quantidade_leito_repouso_indiferenciado_amb,0)
+      + IFNULL(quantidade_leito_repouso_indiferenciado_urgencia,0)
+      + IFNULL(quantidade_leito_repouso_masculino_amb,0) 
+      + IFNULL(quantidade_leito_repouso_masculino_urgencia,0) 
+      + IFNULL(quantidade_leito_repouso_pediatrico_amb,0)
+      + IFNULL(quantidade_leito_repouso_pediatrico_urgencia,0) 
+      + IFNULL(quantidade_leitos_cirurgico,0) 
+      + IFNULL(quantidade_leitos_clinico,0) 
+      + IFNULL(quantidade_leitos_complementar,0)) 
+ 
+FROM `basedosdados.br_ms_cnes.estabelecimento` 
+WHERE ano = 2019
